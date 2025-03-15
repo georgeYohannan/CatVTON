@@ -1,6 +1,6 @@
 {
-    "last_node_id": 17,
-    "last_link_id": 23,
+    "last_node_id": 18,
+    "last_link_id": 24,
     "nodes": [
         {
             "id": 8,
@@ -76,15 +76,15 @@
                 }
             ],
             "properties": {
-                "aux_id": "chflame163/ComfyUI_CatVTON_Wrapper",
+                "cnr_id": "ComfyUI_CatVTON_Wrapper",
                 "ver": "e2ae9b62c53a7c2e009f2448975c6909c83f73b5",
                 "Node name for S&R": "CatVTONWrapper",
-                "cnr_id": "ComfyUI_CatVTON_Wrapper"
+                "aux_id": "chflame163/ComfyUI_CatVTON_Wrapper"
             },
             "widgets_values": [
                 25,
                 "fp16",
-                342544212146251,
+                388858074724591,
                 "randomize",
                 50,
                 3
@@ -116,9 +116,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
+                "cnr_id": "comfyui-impact-pack",
                 "ver": "782c6f439eda79d88f22908bc83f57db77d44097",
-                "Node name for S&R": "SAMLoader"
+                "Node name for S&R": "SAMLoader",
+                "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
             },
             "widgets_values": [
                 "sam_vit_b_01ec64.pth",
@@ -151,99 +152,14 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
-                "Node name for S&R": "GroundingDinoModelLoader (segment anything)"
+                "Node name for S&R": "GroundingDinoModelLoader (segment anything)",
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "GroundingDINO_SwinT_OGC (694MB)"
             ]
-        },
-        {
-            "id": 16,
-            "type": "GroundingDinoSAMSegment (segment anything)",
-            "pos": [
-                786.6085815429688,
-                618.6672973632812
-            ],
-            "size": [
-                529.199951171875,
-                122
-            ],
-            "flags": {},
-            "order": 4,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "sam_model",
-                    "type": "SAM_MODEL",
-                    "link": 19
-                },
-                {
-                    "name": "grounding_dino_model",
-                    "type": "GROUNDING_DINO_MODEL",
-                    "link": 20
-                },
-                {
-                    "name": "image",
-                    "type": "IMAGE",
-                    "link": 21
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": null
-                },
-                {
-                    "name": "MASK",
-                    "type": "MASK",
-                    "links": [
-                        22,
-                        23
-                    ],
-                    "slot_index": 1
-                }
-            ],
-            "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
-                "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
-                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)"
-            },
-            "widgets_values": [
-                "",
-                0.3
-            ]
-        },
-        {
-            "id": 17,
-            "type": "LayerMask: MaskPreview",
-            "pos": [
-                1334.7384033203125,
-                847.357177734375
-            ],
-            "size": [
-                277.20001220703125,
-                246
-            ],
-            "flags": {},
-            "order": 6,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "mask",
-                    "type": "MASK",
-                    "link": 23
-                }
-            ],
-            "outputs": [],
-            "properties": {
-                "aux_id": "chflame163/ComfyUI_LayerStyle",
-                "ver": "4b273d4f08ea28b0743ababab70ae2e6d93be194",
-                "Node name for S&R": "LayerMask: MaskPreview"
-            },
-            "color": "rgba(27, 80, 119, 0.7)"
         },
         {
             "id": 2,
@@ -328,6 +244,92 @@
                 "png-clipart-printed-t-shirt-polo-shirt-clothing-t-shirt-tshirt-fashion-thumbnail.png",
                 "image"
             ]
+        },
+        {
+            "id": 16,
+            "type": "GroundingDinoSAMSegment (segment anything)",
+            "pos": [
+                786.6085815429688,
+                618.6672973632812
+            ],
+            "size": [
+                529.199951171875,
+                122
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "sam_model",
+                    "type": "SAM_MODEL",
+                    "link": 19
+                },
+                {
+                    "name": "grounding_dino_model",
+                    "type": "GROUNDING_DINO_MODEL",
+                    "link": 20
+                },
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 21
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": null
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": [
+                        22,
+                        24
+                    ],
+                    "slot_index": 1
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfyui_segment_anything",
+                "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
+                "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
+                "aux_id": "storyicon/comfyui_segment_anything"
+            },
+            "widgets_values": [
+                "",
+                0.3
+            ]
+        },
+        {
+            "id": 18,
+            "type": "MaskPreview+",
+            "pos": [
+                1355.285888671875,
+                842.8047485351562
+            ],
+            "size": [
+                210,
+                246
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "mask",
+                    "type": "MASK",
+                    "link": 24
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfyui_essentials",
+                "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
+                "Node name for S&R": "MaskPreview+"
+            }
         }
     ],
     "links": [
@@ -388,10 +390,10 @@
             "MASK"
         ],
         [
-            23,
+            24,
             16,
             1,
-            17,
+            18,
             0,
             "MASK"
         ]
@@ -400,10 +402,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6209213230591553,
+            "scale": 0.6830134553650705,
             "offset": [
-                -310.5129659593749,
-                53.142028386913836
+                -212.4188032321015,
+                -89.89444161308543
             ]
         }
     },
