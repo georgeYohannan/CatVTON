@@ -59,7 +59,7 @@
     "14": {
         "inputs": {
             "model_name": "sam_vit_b_01ec64.pth",
-            "device_mode": "AUTO"
+            "device_mode": "Prefer GPU"
         },
         "class_type": "SAMLoader",
         "_meta": {
@@ -68,7 +68,7 @@
     },
     "15": {
         "inputs": {
-            "model_name": "GroundingDINO_SwinT_OGC (694MB)"
+            "model_name": "GroundingDINO_SwinB (938MB)"
         },
         "class_type": "GroundingDinoModelLoader (segment anything)",
         "_meta": {
