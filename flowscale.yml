@@ -3,9 +3,17 @@ models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
-workflows: []
+workflows:
+  - id: 65ca0gsar6
+    name: catvton_api.json
+    file: catvton/catvton_api.json
+    version: 1
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: xpbch68yj7g
     name: catvton.json
     file: catvton/catvton.json
-    version: 0
+    version: 1
