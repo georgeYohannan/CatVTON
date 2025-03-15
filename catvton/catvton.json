@@ -73,7 +73,7 @@
                 314
             ],
             "flags": {},
-            "order": 1,
+            "order": 2,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -108,15 +108,15 @@
             "id": 7,
             "type": "LoadImage",
             "pos": [
-                62.359989166259766,
-                1004.2501220703125
+                -77.59333801269531,
+                162.75857543945312
             ],
             "size": [
                 315,
                 314
             ],
             "flags": {},
-            "order": 0,
+            "order": 3,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -186,7 +186,7 @@
                 82
             ],
             "flags": {},
-            "order": 3,
+            "order": 0,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -200,10 +200,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
+                "cnr_id": "comfyui-impact-pack",
                 "ver": "782c6f439eda79d88f22908bc83f57db77d44097",
                 "Node name for S&R": "SAMLoader",
-                "cnr_id": "comfyui-impact-pack"
+                "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
             },
             "widgets_values": [
                 "sam_vit_b_01ec64.pth",
@@ -222,7 +222,7 @@
                 58
             ],
             "flags": {},
-            "order": 2,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -236,10 +236,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoModelLoader (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "GroundingDINO_SwinB (938MB)"
@@ -293,13 +293,13 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
-                "",
+                "dress",
                 0.3
             ]
         },
@@ -326,10 +326,10 @@
             ],
             "outputs": [],
             "properties": {
-                "aux_id": "cubiq/ComfyUI_essentials",
+                "cnr_id": "comfyui_essentials",
                 "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
                 "Node name for S&R": "MaskPreview+",
-                "cnr_id": "comfyui_essentials"
+                "aux_id": "cubiq/ComfyUI_essentials"
             },
             "widgets_values": []
         }
@@ -404,10 +404,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.6830134553650707,
+            "scale": 0.5644739300537776,
             "offset": [
-                35.39476276789835,
-                -225.14799961308537
+                318.2795132678981,
+                230.86378078691456
             ]
         }
     },
