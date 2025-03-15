@@ -1,7 +1,7 @@
 [
   {
     "name": "ComfyUI_CatVTON_Wrapper",
-    "url": "https://github.com/w3rc/ComfyUI_CatVTON_Wrapper",
+    "url": "https://github.com/chflame163/ComfyUI_CatVTON_Wrapper",
     "path": "custom_nodes",
     "fetch_type": "git-clone",
     "details": {
@@ -19,7 +19,7 @@
     "pip": [],
     "apt": [],
     "cached": "False",
-    "sha": "60c530166b88d3d02a0dd1d003b3f0cd3c308bce"
+    "sha": ""
   },
   {
     "name": "ComfyUI Impact Pack",
