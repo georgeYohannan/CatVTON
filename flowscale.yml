@@ -7,7 +7,7 @@ workflows:
   - id: 65ca0gsar6
     name: catvton_api.json
     file: catvton/catvton_api.json
-    version: 3
+    version: 4
     description: ''
     inputs: []
     outputs: []
@@ -16,4 +16,4 @@ normal_workflows:
   - id: xpbch68yj7g
     name: catvton.json
     file: catvton/catvton.json
-    version: 3
+    version: 4
