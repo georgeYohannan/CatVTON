@@ -1,0 +1,103 @@
+{
+    "1": {
+        "inputs": {
+            "mask_grow": 25,
+            "mixed_precision": "fp16",
+            "seed": 491151633043877,
+            "steps": 50,
+            "cfg": 3,
+            "image": [
+                "2",
+                0
+            ],
+            "mask": [
+                "13",
+                1
+            ],
+            "refer_image": [
+                "7",
+                0
+            ]
+        },
+        "class_type": "CatVTONWrapper",
+        "_meta": {
+            "title": "CatVTON Wrapper"
+        }
+    },
+    "2": {
+        "inputs": {
+            "image": "ComfyUI_00003_.png",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "7": {
+        "inputs": {
+            "image": "png-clipart-printed-t-shirt-polo-shirt-clothing-t-shirt-tshirt-fashion-thumbnail.png",
+            "upload": "image"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "8": {
+        "inputs": {
+            "images": [
+                "1",
+                0
+            ]
+        },
+        "class_type": "PreviewImage",
+        "_meta": {
+            "title": "Preview Image"
+        }
+    },
+    "11": {
+        "inputs": {
+            "mask": [
+                "13",
+                1
+            ]
+        },
+        "class_type": "LayerMask: MaskPreview",
+        "_meta": {
+            "title": "LayerMask: MaskPreview"
+        }
+    },
+    "13": {
+        "inputs": {
+            "face": false,
+            "hair": false,
+            "glasses": false,
+            "top_clothes": true,
+            "bottom_clothes": false,
+            "torso_skin": false,
+            "left_arm": false,
+            "right_arm": false,
+            "left_leg": false,
+            "right_leg": false,
+            "left_foot": false,
+            "right_foot": false,
+            "detail_method": "VITMatte",
+            "detail_erode": 8,
+            "detail_dilate": 6,
+            "black_point": 0.01,
+            "white_point": 0.99,
+            "process_detail": true,
+            "device": "cuda",
+            "max_megapixels": 2,
+            "image": [
+                "2",
+                0
+            ]
+        },
+        "class_type": "LayerMask: HumanPartsUltra",
+        "_meta": {
+            "title": "LayerMask: Human Parts Ultra(Advance)"
+        }
+    }
+}
