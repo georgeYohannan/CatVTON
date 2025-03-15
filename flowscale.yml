@@ -4,4 +4,8 @@ custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
 workflows: []
-normal_workflows: []
+normal_workflows:
+  - id: xpbch68yj7g
+    name: catvton.json
+    file: catvton/catvton.json
+    version: 0
