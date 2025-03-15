@@ -18,7 +18,8 @@
     "nodes": [],
     "pip": [],
     "apt": [],
-    "cached": "False"
+    "cached": "False",
+    "sha": "bd9e09d192b42cd4f6bbb62ac03a4f4b9387e5d4"
   },
   {
     "name": "ComfyUI Impact Pack",
