@@ -16,7 +16,9 @@
       "description": "[a/CatVTON](https://github.com/Zheng-Chong/CatVTON) warpper for ComfyUI"
     },
     "nodes": [],
-    "pip": [],
+    "pip": [
+      "accelerate>=0.30.0"
+    ],
     "apt": [],
     "cached": "False"
   },
