@@ -54,6 +54,10 @@
             "grounding_dino_model": [
                 "15",
                 0
+            ],
+            "image": [
+                "20",
+                0
             ]
         },
         "class_type": "GroundingDinoSAMSegment (segment anything)",
