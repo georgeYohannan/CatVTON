@@ -19,7 +19,7 @@
     "pip": [],
     "apt": [],
     "cached": "False",
-    "sha": "b3a1cd9ae8efd7834e9817c4e2d9c05f00241a1e"
+    "sha": "847c6f56efdd01270c532340239aa50763f920fc"
   },
   {
     "name": "ComfyUI Impact Pack",
@@ -155,6 +155,6 @@
     "pip": [],
     "apt": [],
     "cached": "False",
-    "sha": ""
+    "sha": "847c6f56efdd01270c532340239aa50763f920fc"
   }
 ]
