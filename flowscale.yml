@@ -7,7 +7,7 @@ workflows:
   - id: 65ca0gsar6
     name: catvton_api.json
     file: catvton/catvton_api.json
-    version: 8
+    version: 9
     description: ''
     inputs:
       - path: 19.inputs.image
@@ -18,7 +18,7 @@ workflows:
         category: input
         randomize: false
       - path: 20.inputs.image
-        label: Input Image
+        label: Target Image
         parameter_name: image_12519
         type: string
         demo_type: image
@@ -40,7 +40,7 @@ normal_workflows:
   - id: xpbch68yj7g
     name: catvton.json
     file: catvton/catvton.json
-    version: 8
+    version: 9
   - id: f27z755073
     name: catvton_example.json
     file: catvton/catvton_example.json
