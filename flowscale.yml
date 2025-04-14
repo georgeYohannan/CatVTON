@@ -36,6 +36,10 @@ workflows:
         demo_type: image
     skip_preprocess: true
     advancedConfig: false
+  - id: 985g46ibehe
+    name: catvton.json
+    description: ''
+    file: catvton/catvton.json
 normal_workflows:
   - id: xpbch68yj7g
     name: catvton.json
