@@ -1,7 +1,7 @@
 [
   {
     "name": "ComfyUI_CatVTON_Wrapper",
-    "url": "https://github.com/chflame163/ComfyUI_CatVTON_Wrapper",
+    "url": "https://github.com/w3rc/ComfyUI_CatVTON_Wrapper",
     "path": "custom_nodes",
     "fetch_type": "git-clone",
     "details": {
