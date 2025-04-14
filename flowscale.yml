@@ -41,7 +41,3 @@ normal_workflows:
     name: catvton.json
     file: catvton/catvton.json
     version: 10
-  - id: mpwvb3x41rd
-    name: catvton_workflow_new.json
-    file: catvton/catvton_workflow_new.json
-    version: 0
