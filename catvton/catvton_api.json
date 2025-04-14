@@ -80,7 +80,7 @@
     },
     "19": {
         "inputs": {
-            "image": "ComfyUI_00003_.png",
+            "image": "a_t-shirt.jpeg",
             "label": "Reference Image"
         },
         "class_type": "FSLoadImage",
@@ -90,7 +90,7 @@
     },
     "20": {
         "inputs": {
-            "image": "girl.jpg",
+            "image": "model_wearing_t-shirt.jpg",
             "label": "Target Image"
         },
         "class_type": "FSLoadImage",
