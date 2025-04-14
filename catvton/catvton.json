@@ -54,11 +54,11 @@
             "widgets_values": [
                 25,
                 "fp16",
-                249494236961444,
+                356418968968576,
                 "randomize",
                 50,
                 3,
-                "dresscode"
+                "mix"
             ]
         },
         {
@@ -252,7 +252,7 @@
                 "Node name for S&R": "FSLoadImage"
             },
             "widgets_values": [
-                "ComfyUI_temp_dycll_00003_.png",
+                "ComfyUI_00003_.png",
                 "image",
                 "Reference Image",
                 ""
@@ -408,10 +408,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.620921323059155,
+            "scale": 0.5644739300537773,
             "offset": [
-                -240.44682418255815,
-                216.90410919979857
+                144.62181901264495,
+                457.1318126464305
             ]
         }
     },
