@@ -13,7 +13,7 @@
             ],
             "size": [
                 315,
-                218
+                242
             ],
             "flags": {},
             "order": 5,
@@ -54,10 +54,11 @@
             "widgets_values": [
                 25,
                 "fp16",
-                388858074724591,
+                249494236961444,
                 "randomize",
                 50,
-                3
+                3,
+                "dresscode"
             ]
         },
         {
@@ -86,10 +87,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
+                "cnr_id": "comfyui-impact-pack",
                 "ver": "782c6f439eda79d88f22908bc83f57db77d44097",
                 "Node name for S&R": "SAMLoader",
-                "cnr_id": "comfyui-impact-pack"
+                "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
             },
             "widgets_values": [
                 "sam_vit_b_01ec64.pth",
@@ -122,10 +123,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoModelLoader (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "GroundingDINO_SwinB (938MB)"
@@ -135,8 +136,8 @@
             "id": 16,
             "type": "GroundingDinoSAMSegment (segment anything)",
             "pos": [
-                786.6085815429688,
-                618.6672973632812
+                730.9486083984375,
+                599.3070068359375
             ],
             "size": [
                 529.199951171875,
@@ -179,10 +180,10 @@
                 }
             ],
             "properties": {
-                "aux_id": "storyicon/comfyui_segment_anything",
+                "cnr_id": "comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
-                "cnr_id": "comfyui_segment_anything"
+                "aux_id": "storyicon/comfyui_segment_anything"
             },
             "widgets_values": [
                 "dress",
@@ -193,8 +194,8 @@
             "id": 18,
             "type": "MaskPreview+",
             "pos": [
-                1049.15576171875,
-                837.4806518554688
+                1444.826171875,
+                763.670654296875
             ],
             "size": [
                 210,
@@ -212,12 +213,14 @@
             ],
             "outputs": [],
             "properties": {
-                "aux_id": "cubiq/ComfyUI_essentials",
+                "cnr_id": "comfyui_essentials",
                 "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
                 "Node name for S&R": "MaskPreview+",
-                "cnr_id": "comfyui_essentials"
+                "aux_id": "cubiq/ComfyUI_essentials"
             },
-            "widgets_values": []
+            "widgets_values": [
+                ""
+            ]
         },
         {
             "id": 19,
@@ -249,7 +252,7 @@
                 "Node name for S&R": "FSLoadImage"
             },
             "widgets_values": [
-                "qq_865442_preview.png",
+                "ComfyUI_temp_dycll_00003_.png",
                 "image",
                 "Reference Image",
                 ""
@@ -286,9 +289,9 @@
                 "Node name for S&R": "FSLoadImage"
             },
             "widgets_values": [
-                "ComfyUI_temp_dycll_00003_.png",
+                "girl.jpg",
                 "image",
-                "Input Image",
+                "Target Image",
                 ""
             ]
         },
@@ -301,7 +304,7 @@
             ],
             "size": [
                 315,
-                154
+                366
             ],
             "flags": {},
             "order": 7,
@@ -330,7 +333,8 @@
                 "png",
                 "Output Image",
                 95,
-                false
+                false,
+                ""
             ]
         }
     ],
@@ -404,10 +408,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.9090909090909091,
+            "scale": 0.620921323059155,
             "offset": [
-                -180.36187064119113,
-                -43.82295248581244
+                -240.44682418255815,
+                216.90410919979857
             ]
         }
     },
