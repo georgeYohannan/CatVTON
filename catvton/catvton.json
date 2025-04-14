@@ -2,7 +2,7 @@
     "id": "83e57e33-ec49-45ec-9765-aa9f75859dc5",
     "revision": 0,
     "last_node_id": 21,
-    "last_link_id": 28,
+    "last_link_id": 30,
     "nodes": [
         {
             "id": 1,
@@ -22,7 +22,7 @@
                 {
                     "name": "image",
                     "type": "IMAGE",
-                    "link": 26
+                    "link": 30
                 },
                 {
                     "name": "mask",
@@ -32,7 +32,7 @@
                 {
                     "name": "refer_image",
                     "type": "IMAGE",
-                    "link": 25
+                    "link": 29
                 }
             ],
             "outputs": [
@@ -46,10 +46,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "ComfyUI_CatVTON_Wrapper",
+                "aux_id": "chflame163/ComfyUI_CatVTON_Wrapper",
                 "ver": "e2ae9b62c53a7c2e009f2448975c6909c83f73b5",
                 "Node name for S&R": "CatVTONWrapper",
-                "aux_id": "chflame163/ComfyUI_CatVTON_Wrapper"
+                "cnr_id": "ComfyUI_CatVTON_Wrapper"
             },
             "widgets_values": [
                 25,
@@ -86,10 +86,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui-impact-pack",
+                "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
                 "ver": "782c6f439eda79d88f22908bc83f57db77d44097",
                 "Node name for S&R": "SAMLoader",
-                "aux_id": "ltdrdata/ComfyUI-Impact-Pack"
+                "cnr_id": "comfyui-impact-pack"
             },
             "widgets_values": [
                 "sam_vit_b_01ec64.pth",
@@ -122,10 +122,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_segment_anything",
+                "aux_id": "storyicon/comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoModelLoader (segment anything)",
-                "aux_id": "storyicon/comfyui_segment_anything"
+                "cnr_id": "comfyui_segment_anything"
             },
             "widgets_values": [
                 "GroundingDINO_SwinB (938MB)"
@@ -179,10 +179,10 @@
                 }
             ],
             "properties": {
-                "cnr_id": "comfyui_segment_anything",
+                "aux_id": "storyicon/comfyui_segment_anything",
                 "ver": "ab6395596399d5048639cdab7e44ec9fae857a93",
                 "Node name for S&R": "GroundingDinoSAMSegment (segment anything)",
-                "aux_id": "storyicon/comfyui_segment_anything"
+                "cnr_id": "comfyui_segment_anything"
             },
             "widgets_values": [
                 "dress",
@@ -212,10 +212,10 @@
             ],
             "outputs": [],
             "properties": {
-                "cnr_id": "comfyui_essentials",
+                "aux_id": "cubiq/ComfyUI_essentials",
                 "ver": "33ff89fd354d8ec3ab6affb605a79a931b445d99",
                 "Node name for S&R": "MaskPreview+",
-                "aux_id": "cubiq/ComfyUI_essentials"
+                "cnr_id": "comfyui_essentials"
             },
             "widgets_values": []
         },
@@ -239,7 +239,7 @@
                     "name": "image",
                     "type": "IMAGE",
                     "links": [
-                        26
+                        29
                     ]
                 }
             ],
@@ -275,8 +275,8 @@
                     "name": "image",
                     "type": "IMAGE",
                     "links": [
-                        25,
-                        28
+                        28,
+                        30
                     ]
                 }
             ],
@@ -368,22 +368,6 @@
             "MASK"
         ],
         [
-            25,
-            20,
-            0,
-            1,
-            2,
-            "IMAGE"
-        ],
-        [
-            26,
-            19,
-            0,
-            1,
-            0,
-            "IMAGE"
-        ],
-        [
             27,
             1,
             0,
@@ -398,16 +382,32 @@
             16,
             2,
             "IMAGE"
+        ],
+        [
+            29,
+            19,
+            0,
+            1,
+            2,
+            "IMAGE"
+        ],
+        [
+            30,
+            20,
+            0,
+            1,
+            0,
+            "IMAGE"
         ]
     ],
     "groups": [],
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.7513148009015784,
+            "scale": 0.9090909090909091,
             "offset": [
-                -109.81477973210164,
-                116.50177478691434
+                -180.36187064119113,
+                -43.82295248581244
             ]
         }
     },
