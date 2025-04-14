@@ -1,8 +1,8 @@
 {
     "id": "83e57e33-ec49-45ec-9765-aa9f75859dc5",
     "revision": 0,
-    "last_node_id": 21,
-    "last_link_id": 30,
+    "last_node_id": 24,
+    "last_link_id": 34,
     "nodes": [
         {
             "id": 1,
@@ -16,13 +16,13 @@
                 242
             ],
             "flags": {},
-            "order": 5,
+            "order": 7,
             "mode": 0,
             "inputs": [
                 {
                     "name": "image",
                     "type": "IMAGE",
-                    "link": 30
+                    "link": 33
                 },
                 {
                     "name": "mask",
@@ -32,7 +32,7 @@
                 {
                     "name": "refer_image",
                     "type": "IMAGE",
-                    "link": 29
+                    "link": 34
                 }
             ],
             "outputs": [
@@ -41,7 +41,8 @@
                     "type": "IMAGE",
                     "slot_index": 0,
                     "links": [
-                        27
+                        27,
+                        31
                     ]
                 }
             ],
@@ -54,7 +55,7 @@
             "widgets_values": [
                 25,
                 "fp16",
-                356418968968576,
+                785892095129759,
                 "randomize",
                 50,
                 3,
@@ -73,7 +74,7 @@
                 82
             ],
             "flags": {},
-            "order": 0,
+            "order": 1,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -93,7 +94,7 @@
                 "cnr_id": "comfyui-impact-pack"
             },
             "widgets_values": [
-                "sam_vit_b_01ec64.pth",
+                "sam_vit_h_4b8939.pth",
                 "Prefer GPU"
             ]
         },
@@ -109,7 +110,7 @@
                 58
             ],
             "flags": {},
-            "order": 1,
+            "order": 0,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -144,7 +145,7 @@
                 122
             ],
             "flags": {},
-            "order": 4,
+            "order": 6,
             "mode": 0,
             "inputs": [
                 {
@@ -160,7 +161,7 @@
                 {
                     "name": "image",
                     "type": "IMAGE",
-                    "link": 28
+                    "link": 32
                 }
             ],
             "outputs": [
@@ -202,7 +203,7 @@
                 246
             ],
             "flags": {},
-            "order": 6,
+            "order": 8,
             "mode": 0,
             "inputs": [
                 {
@@ -218,30 +219,30 @@
                 "Node name for S&R": "MaskPreview+",
                 "cnr_id": "comfyui_essentials"
             },
-            "widgets_values": []
+            "widgets_values": [
+                ""
+            ]
         },
         {
             "id": 19,
             "type": "FSLoadImage",
             "pos": [
-                720.7430419921875,
-                137.7191619873047
+                1041.088134765625,
+                12.099404335021973
             ],
             "size": [
-                315,
-                318
+                210,
+                330
             ],
             "flags": {},
-            "order": 2,
-            "mode": 0,
+            "order": 3,
+            "mode": 4,
             "inputs": [],
             "outputs": [
                 {
                     "name": "image",
                     "type": "IMAGE",
-                    "links": [
-                        29
-                    ]
+                    "links": []
                 }
             ],
             "properties": {
@@ -260,25 +261,22 @@
             "id": 20,
             "type": "FSLoadImage",
             "pos": [
-                257.5559387207031,
-                188.29727172851562
+                357.11468505859375,
+                21.975522994995117
             ],
             "size": [
-                315,
-                318
+                210,
+                330
             ],
             "flags": {},
-            "order": 3,
-            "mode": 0,
+            "order": 2,
+            "mode": 4,
             "inputs": [],
             "outputs": [
                 {
                     "name": "image",
                     "type": "IMAGE",
-                    "links": [
-                        28,
-                        30
-                    ]
+                    "links": []
                 }
             ],
             "properties": {
@@ -297,15 +295,15 @@
             "id": 21,
             "type": "FSSaveImage",
             "pos": [
-                1793.52978515625,
-                443.8492736816406
+                1798.2149658203125,
+                160.3995819091797
             ],
             "size": [
                 315,
                 366
             ],
             "flags": {},
-            "order": 7,
+            "order": 9,
             "mode": 0,
             "inputs": [
                 {
@@ -331,7 +329,120 @@
                 "png",
                 "Output Image",
                 95,
-                false
+                false,
+                ""
+            ]
+        },
+        {
+            "id": 22,
+            "type": "SaveImage",
+            "pos": [
+                1873.9183349609375,
+                723.6719970703125
+            ],
+            "size": [
+                315,
+                270
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 31
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.27"
+            },
+            "widgets_values": [
+                "ComfyUI",
+                ""
+            ]
+        },
+        {
+            "id": 23,
+            "type": "LoadImage",
+            "pos": [
+                22.71019172668457,
+                22.95405387878418
+            ],
+            "size": [
+                315,
+                314
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        32,
+                        33
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.27",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "women_wearing_a_dress.jpeg",
+                "image",
+                ""
+            ]
+        },
+        {
+            "id": 24,
+            "type": "LoadImage",
+            "pos": [
+                685.0687255859375,
+                117.53478240966797
+            ],
+            "size": [
+                315,
+                314
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        34
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.27",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "women_dress_red.jpeg",
+                "image",
+                ""
             ]
         }
     ],
@@ -377,27 +488,35 @@
             "IMAGE"
         ],
         [
-            28,
-            20,
+            31,
+            1,
+            0,
+            22,
+            0,
+            "IMAGE"
+        ],
+        [
+            32,
+            23,
             0,
             16,
             2,
             "IMAGE"
         ],
         [
-            29,
-            19,
+            33,
+            23,
             0,
             1,
-            2,
+            0,
             "IMAGE"
         ],
         [
-            30,
-            20,
+            34,
+            24,
             0,
             1,
-            0,
+            2,
             "IMAGE"
         ]
     ],
@@ -407,8 +526,8 @@
         "ds": {
             "scale": 0.6830134553650707,
             "offset": [
-                60.45069214032997,
-                128.7268755506661
+                57.52249214032999,
+                95.63816193372276
             ]
         }
     },
