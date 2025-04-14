@@ -3,12 +3,12 @@
         "inputs": {
             "mask_grow": 25,
             "mixed_precision": "fp16",
-            "seed": 356418968968576,
+            "seed": 785892095129759,
             "steps": 50,
             "cfg": 3,
             "attention_type": "mix",
             "image": [
-                "20",
+                "23",
                 0
             ],
             "mask": [
@@ -16,7 +16,7 @@
                 1
             ],
             "refer_image": [
-                "19",
+                "24",
                 0
             ]
         },
@@ -27,7 +27,7 @@
     },
     "14": {
         "inputs": {
-            "model_name": "sam_vit_b_01ec64.pth",
+            "model_name": "sam_vit_h_4b8939.pth",
             "device_mode": "Prefer GPU"
         },
         "class_type": "SAMLoader",
@@ -57,7 +57,7 @@
                 0
             ],
             "image": [
-                "20",
+                "23",
                 0
             ]
         },
@@ -78,26 +78,6 @@
             "title": "🔧 Mask Preview"
         }
     },
-    "19": {
-        "inputs": {
-            "image": "a_t-shirt.jpeg",
-            "label": "Reference Image"
-        },
-        "class_type": "FSLoadImage",
-        "_meta": {
-            "title": "[FS]⚡Load Image (Input)"
-        }
-    },
-    "20": {
-        "inputs": {
-            "image": "model_wearing_t-shirt.jpg",
-            "label": "Target Image"
-        },
-        "class_type": "FSLoadImage",
-        "_meta": {
-            "title": "[FS]⚡Load Image (Input)"
-        }
-    },
     "21": {
         "inputs": {
             "filename_prefix": "FlowScale",
@@ -113,6 +93,37 @@
         "class_type": "FSSaveImage",
         "_meta": {
             "title": "[FS]⚡Save Image (Output)"
+        }
+    },
+    "22": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "1",
+                0
+            ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+            "title": "Save Image"
+        }
+    },
+    "23": {
+        "inputs": {
+            "image": "women_wearing_a_dress.jpeg"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
+        }
+    },
+    "24": {
+        "inputs": {
+            "image": "women_dress_red.jpeg"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+            "title": "Load Image"
         }
     }
 }
