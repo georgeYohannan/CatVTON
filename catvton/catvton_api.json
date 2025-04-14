@@ -7,7 +7,7 @@
             "steps": 50,
             "cfg": 3,
             "image": [
-                "2",
+                "19",
                 0
             ],
             "mask": [
@@ -15,45 +15,13 @@
                 1
             ],
             "refer_image": [
-                "7",
+                "20",
                 0
             ]
         },
         "class_type": "CatVTONWrapper",
         "_meta": {
             "title": "CatVTON Wrapper"
-        }
-    },
-    "2": {
-        "inputs": {
-            "image": "ComfyUI_00003_.png",
-            "upload": "image"
-        },
-        "class_type": "LoadImage",
-        "_meta": {
-            "title": "Load Image"
-        }
-    },
-    "7": {
-        "inputs": {
-            "image": "png-clipart-printed-t-shirt-polo-shirt-clothing-t-shirt-tshirt-fashion-thumbnail.png",
-            "upload": "image"
-        },
-        "class_type": "LoadImage",
-        "_meta": {
-            "title": "Load Image"
-        }
-    },
-    "8": {
-        "inputs": {
-            "images": [
-                "1",
-                0
-            ]
-        },
-        "class_type": "PreviewImage",
-        "_meta": {
-            "title": "Preview Image"
         }
     },
     "14": {
@@ -86,10 +54,6 @@
             "grounding_dino_model": [
                 "15",
                 0
-            ],
-            "image": [
-                "2",
-                0
             ]
         },
         "class_type": "GroundingDinoSAMSegment (segment anything)",
@@ -107,6 +71,43 @@
         "class_type": "MaskPreview+",
         "_meta": {
             "title": "🔧 Mask Preview"
+        }
+    },
+    "19": {
+        "inputs": {
+            "image": "qq_865442_preview.png",
+            "label": "Reference Image"
+        },
+        "class_type": "FSLoadImage",
+        "_meta": {
+            "title": "[FS]⚡Load Image (Input)"
+        }
+    },
+    "20": {
+        "inputs": {
+            "image": "ComfyUI_temp_dycll_00003_.png",
+            "label": "Input Image"
+        },
+        "class_type": "FSLoadImage",
+        "_meta": {
+            "title": "[FS]⚡Load Image (Input)"
+        }
+    },
+    "21": {
+        "inputs": {
+            "filename_prefix": "FlowScale",
+            "format": "png",
+            "label": "Output Image",
+            "quality": 95,
+            "lossless": false,
+            "images": [
+                "1",
+                0
+            ]
+        },
+        "class_type": "FSSaveImage",
+        "_meta": {
+            "title": "[FS]⚡Save Image (Output)"
         }
     }
 }
