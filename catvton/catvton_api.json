@@ -3,9 +3,10 @@
         "inputs": {
             "mask_grow": 25,
             "mixed_precision": "fp16",
-            "seed": 388858074724591,
+            "seed": 249494236961444,
             "steps": 50,
             "cfg": 3,
+            "attention_type": "dresscode",
             "image": [
                 "20",
                 0
@@ -79,7 +80,7 @@
     },
     "19": {
         "inputs": {
-            "image": "qq_865442_preview.png",
+            "image": "ComfyUI_temp_dycll_00003_.png",
             "label": "Reference Image"
         },
         "class_type": "FSLoadImage",
@@ -89,8 +90,8 @@
     },
     "20": {
         "inputs": {
-            "image": "ComfyUI_temp_dycll_00003_.png",
-            "label": "Input Image"
+            "image": "girl.jpg",
+            "label": "Target Image"
         },
         "class_type": "FSLoadImage",
         "_meta": {
