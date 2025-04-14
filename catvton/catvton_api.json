@@ -3,10 +3,10 @@
         "inputs": {
             "mask_grow": 25,
             "mixed_precision": "fp16",
-            "seed": 249494236961444,
+            "seed": 356418968968576,
             "steps": 50,
             "cfg": 3,
-            "attention_type": "dresscode",
+            "attention_type": "mix",
             "image": [
                 "20",
                 0
@@ -80,7 +80,7 @@
     },
     "19": {
         "inputs": {
-            "image": "ComfyUI_temp_dycll_00003_.png",
+            "image": "ComfyUI_00003_.png",
             "label": "Reference Image"
         },
         "class_type": "FSLoadImage",
